@@ -33,6 +33,9 @@ function generatePassword() {
     options.numberOfChars = length;
 
     options.hasLowerChars = confirm("Would you like lower case characters?");
+    options.hasLowerChars = confirm("Would you like upper case characters?");
+    options.hasLowerChars = confirm("Would you like numbers?");
+    options.hasLowerChars = confirm("Would you like special characters?");
 
     for (var i = 0; i <= passwordLength; i++) {
         var randomNumber = Math.floor(Math.random() * chars.length);
